@@ -1,0 +1,55 @@
+* {
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  margin: 2rem 3rem;
+  background: rgba(237, 253, 253, 0.26);
+}
+
+nav .part2, nav .part1 .links, nav .part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+nav {
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .part1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .part1 .logo h2 span {
+  color: rgb(151, 151, 12);
+}
+nav .part1 .links a {
+  text-decoration: none;
+  color: black;
+}
+nav .part1 .links a:hover {
+  color: rgb(151, 151, 12);
+}
+nav .part2 .search {
+  background: white;
+  border: 1.5px solid rgb(224, 224, 224);
+  padding: 0.5rem;
+}
+nav .part2 .search input {
+  border: none;
+  outline: none;
+}
+nav .part2 .search span {
+  color: rgb(151, 151, 12);
+}

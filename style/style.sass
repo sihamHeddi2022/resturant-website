@@ -1,0 +1,53 @@
+
+$yellow: rgb(151, 151, 12)
+$background : rgba(237, 253, 253, 0.26)
+$grey:rgb(224, 224, 224)
+*
+    font-family: 'Mukta', sans-serif 
+
+
+body
+    margin: 2rem 3rem
+    background: $background
+    
+%flex
+    display: flex
+    gap: 2rem
+
+nav
+    text-transform: capitalize
+    .part1
+        @extend %flex
+        align-items: center
+
+        .logo
+            h2
+                span
+                    color: $yellow
+                    
+
+        .links
+           @extend %flex
+           a
+            text-decoration: none
+            color: black
+            &:hover 
+                color: $yellow
+    display: flex
+    align-items: center
+    justify-content: space-between
+    
+    .part2
+        @extend %flex
+
+        .search
+            background: white
+            border: 1.5px solid $grey
+            padding: .5rem
+            input
+                border: none
+                outline: none
+            span
+                color: $yellow
+ 
+        
