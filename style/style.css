@@ -7,7 +7,7 @@ body {
   background: rgba(237, 253, 253, 0.26);
 }
 
-nav .part2, nav .part1 .links, nav .part1 {
+nav .part2 .buttons, nav .part2, nav .part1 .links, nav .part1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,24 +32,59 @@ nav .part1 {
           align-items: center;
 }
 nav .part1 .logo h2 span {
-  color: rgb(151, 151, 12);
+  color: rgb(233, 189, 44);
+}
+nav .part1 .links a.active {
+  font-weight: bold;
 }
 nav .part1 .links a {
   text-decoration: none;
   color: black;
 }
 nav .part1 .links a:hover {
-  color: rgb(151, 151, 12);
+  color: rgb(233, 189, 44);
 }
 nav .part2 .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
   background: white;
   border: 1.5px solid rgb(224, 224, 224);
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 nav .part2 .search input {
   border: none;
   outline: none;
 }
 nav .part2 .search span {
-  color: rgb(151, 151, 12);
+  color: rgb(233, 189, 44);
+}
+nav .part2 .buttons {
+  gap: 1rem;
+}
+nav .part2 .buttons button {
+  padding: 0.7rem;
+  text-transform: capitalize;
+  border-radius: 0.4rem;
+}
+nav .part2 .buttons button:nth-of-type(1) {
+  background: white;
+  border: 1.5px solid rgb(224, 224, 224);
+  outline: none;
+}
+nav .part2 .buttons button:nth-of-type(2) {
+  border: none;
+  outline: none;
+  background: rgb(233, 189, 44);
+  width: 5rem;
+  font-weight: bold;
+}
+
+section.home .info h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
 }

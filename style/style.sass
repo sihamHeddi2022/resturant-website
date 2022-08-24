@@ -1,5 +1,6 @@
 
-$yellow: rgb(151, 151, 12)
+$yellow: rgb(233, 189, 44)
+$yellow1:rgb(228, 228, 51)
 $background : rgba(237, 253, 253, 0.26)
 $grey:rgb(224, 224, 224)
 *
@@ -28,11 +29,14 @@ nav
 
         .links
            @extend %flex
+           a.active 
+             font-weight: bold
            a
             text-decoration: none
             color: black
             &:hover 
                 color: $yellow
+
     display: flex
     align-items: center
     justify-content: space-between
@@ -41,13 +45,40 @@ nav
         @extend %flex
 
         .search
+            display: flex
+            align-items: center
+            gap: .3rem
             background: white
             border: 1.5px solid $grey
-            padding: .5rem
+            padding: .3rem
+
             input
                 border: none
                 outline: none
             span
                 color: $yellow
- 
+        .buttons
+            @extend %flex
+            gap: 1rem
+            button
+                padding: .7rem
+                text-transform: capitalize
+                border-radius: .4rem
+            button:nth-of-type(1)
+                background: white
+                border: 1.5px solid $grey
+                outline: none
         
+            button:nth-of-type(2)
+                border: none
+                outline: none
+                background: $yellow
+                width:5rem
+                font-weight: bold
+  
+
+section.home
+        .info
+            h1
+                text-transform: capitalize
+                font-size: 3rem
