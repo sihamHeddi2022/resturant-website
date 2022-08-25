@@ -78,7 +78,56 @@ nav
   
 
 section.home
+        display:grid
+        grid-template-columns: 1fr 1fr
+
         .info
+
             h1
                 text-transform: capitalize
                 font-size: 3rem
+                margin-top:0
+                margin-left:2rem
+            img
+                margin-top : 6rem
+                margin-bottom:0
+            p , input , button , .features
+                margin-left:2rem
+            p.description
+                color : grey
+                margin-bottom:2rem
+            .search
+               
+                @extend %flex
+                gap:.5rem
+                background-color: white
+                margin-left:2rem
+               
+                border: 1.5px solid $grey
+                width: fit-content
+
+                input , button
+                    border:0
+                    outline:0
+                input,i,button
+                    margin:0
+                input , .dd 
+                    padding: .4rem
+                button
+                    margin: .2rem
+                    padding:.5rem
+                    border-radius:.3rem
+                    background-color:$yellow
+                    width:6rem
+
+            .features
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                .feature
+                    color:red
+            
+            
+            
+
+
+                

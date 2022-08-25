@@ -7,7 +7,7 @@ body {
   background: rgba(237, 253, 253, 0.26);
 }
 
-nav .part2 .buttons, nav .part2, nav .part1 .links, nav .part1 {
+section.home .info .search, nav .part2 .buttons, nav .part2, nav .part1 .links, nav .part1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +84,56 @@ nav .part2 .buttons button:nth-of-type(2) {
   font-weight: bold;
 }
 
+section.home {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
 section.home .info h1 {
   text-transform: capitalize;
   font-size: 3rem;
+  margin-top: 0;
+  margin-left: 2rem;
+}
+section.home .info img {
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+section.home .info p, section.home .info input, section.home .info button, section.home .info .features {
+  margin-left: 2rem;
+}
+section.home .info p.description {
+  color: grey;
+  margin-bottom: 2rem;
+}
+section.home .info .search {
+  gap: 0.5rem;
+  background-color: white;
+  margin-left: 2rem;
+  border: 1.5px solid rgb(224, 224, 224);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section.home .info .search input, section.home .info .search button {
+  border: 0;
+  outline: 0;
+}
+section.home .info .search input, section.home .info .search i, section.home .info .search button {
+  margin: 0;
+}
+section.home .info .search input, section.home .info .search .dd {
+  padding: 0.4rem;
+}
+section.home .info .search button {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgb(233, 189, 44);
+  width: 6rem;
+}
+section.home .info .features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
